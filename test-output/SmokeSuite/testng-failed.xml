@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SmokeSuite]" parallel="tests">
+  <parameter name="browser" value="firefox"/>
+  <parameter name="appUrl" value="http://www.zagg.local/"/>
+  <listeners>
+    <listener class-name="com.lib.ExtentReportNG"/>
+    <listener class-name="com.lib.TestNGCustomReportListener"/>
+    <listener class-name="com.lib.RetryListener"/>
+  </listeners>
+  <test thread-count="5" name="Zagg Auccount Management(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="appUrl" value="http://www.zagg.local/"/>
+    <classes>
+      <class name="zagg.accountRegistration.LoginTests">
+        <methods>
+          <include name="loginWithValidCredentials"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- zagg.accountRegistration.LoginTests -->
+    </classes>
+  </test> <!-- Zagg Auccount Management(failed) -->
+</suite> <!-- Failed suite [SmokeSuite] -->

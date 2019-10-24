@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Zagg Auccount Management"
+           tests="14"
+           failures="8"
+           errors="0"
+           skipped="0"
+           time="744.403">
+  <properties />
+            <testcase name="registerMultiCasesProducts" time="177.219" classname="zagg.prodRegistration.ProductRegistartionTests">
+                <failure type="java.lang.AssertionError"
+                  message="Crystal - option is not present expected [true] but found [false]"
+              >
+<![CDATA[java.lang.AssertionError: Crystal - option is not present expected [true] but found [false]
+  org.testng.Assert.fail(Assert.java:96)
+  org.testng.Assert.failNotEquals(Assert.java:776)
+  org.testng.Assert.assertTrue(Assert.java:44)
+  zagg.prodRegistration.ProductRegistartionMethods.selectproductUnderCategory(ProductRegistartionMethods.java:1405)
+  zagg.prodRegistration.ProductRegistartionTests.registerMultiCasesProducts(ProductRegistartionTests.java:599)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+  org.testng.TestRunner.privateRun(TestRunner.java:648)
+  org.testng.TestRunner.run(TestRunner.java:505)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+  org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+  java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+  java.lang.Thread.run(Thread.java:748)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="registerProdThruSerialNumber" time="50.795" classname="zagg.prodRegistration.ProductRegistartionTests">
+                <failure type="java.lang.AssertionError"
+                  message="expected [Account Dashboard] but found [Product Registration]"
+              >
+<![CDATA[java.lang.AssertionError: expected [Account Dashboard] but found [Product Registration]
+  org.testng.Assert.fail(Assert.java:96)
+  org.testng.Assert.failNotEquals(Assert.java:776)
+  org.testng.Assert.assertEqualsImpl(Assert.java:137)
+  org.testng.Assert.assertEquals(Assert.java:118)
+  org.testng.Assert.assertEquals(Assert.java:453)
+  org.testng.Assert.assertEquals(Assert.java:463)
+  com.lib.TestBase.validateTitle(TestBase.java:97)
+  zagg.prodRegistration.ProductRegistartionMethods.registeredProducts(ProductRegistartionMethods.java:436)
+  zagg.prodRegistration.ProductRegistartionTests.registerProdThruSerialNumber(ProductRegistartionTests.java:67)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+  org.testng.TestRunner.privateRun(TestRunner.java:648)
+  org.testng.TestRunner.run(TestRunner.java:505)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+  org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+  java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+  java.lang.Thread.run(Thread.java:748)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="registerMultiHeadphonesProducts" time="41.837" classname="zagg.prodRegistration.ProductRegistartionTests">
+                <failure type="java.lang.AssertionError"
+                  message="expected [You have successfully registered your product!] but found [null]"
+              >
+<![CDATA[java.lang.AssertionError: expected [You have successfully registered your product!] but found [null]
+  org.testng.Assert.fail(Assert.java:96)
+  org.testng.Assert.failNotEquals(Assert.java:776)
+  org.testng.Assert.assertEqualsImpl(Assert.java:132)
+  org.testng.Assert.assertEquals(Assert.java:118)
+  org.testng.Assert.assertEquals(Assert.java:453)
+  org.testng.Assert.assertEquals(Assert.java:463)
+  zagg.prodRegistration.ProductRegistartionMethods.isRegisteredConfirmed(ProductRegistartionMethods.java:1126)
+  zagg.prodRegistration.ProductRegistartionTests.registerMultiHeadphonesProducts(ProductRegistartionTests.java:629)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+  org.testng.TestRunner.privateRun(TestRunner.java:648)
+  org.testng.TestRunner.run(TestRunner.java:505)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+  org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+  java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+  java.lang.Thread.run(Thread.java:748)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="registerMultiSpeakersProducts" time="45.188" classname="zagg.prodRegistration.ProductRegistartionTests">
+                <failure type="java.lang.AssertionError"
+                  message="BRV-XXL2 - option is not present expected [true] but found [false]"
+              >
+<![CDATA[java.lang.AssertionError: BRV-XXL2 - option is not present expected [true] but found [false]
+  org.testng.Assert.fail(Assert.java:96)
+  org.testng.Assert.failNotEquals(Assert.java:776)
+  org.testng.Assert.assertTrue(Assert.java:44)
+  zagg.prodRegistration.ProductRegistartionMethods.selectproductUnderCategory(ProductRegistartionMethods.java:1405)
+  zagg.prodRegistration.ProductRegistartionTests.registerMultiSpeakersProducts(ProductRegistartionTests.java:748)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+  org.testng.TestRunner.privateRun(TestRunner.java:648)
+  org.testng.TestRunner.run(TestRunner.java:505)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+  org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+  java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+  java.lang.Thread.run(Thread.java:748)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="registerMultiReplacementPartsProducts" time="88.790" classname="zagg.prodRegistration.ProductRegistartionTests">
+                <failure type="java.lang.AssertionError"
+                  message="juice pack wireless cap - option is not present expected [true] but found [false]"
+              >
+<![CDATA[java.lang.AssertionError: juice pack wireless cap - option is not present expected [true] but found [false]
+  org.testng.Assert.fail(Assert.java:96)
+  org.testng.Assert.failNotEquals(Assert.java:776)
+  org.testng.Assert.assertTrue(Assert.java:44)
+  zagg.prodRegistration.ProductRegistartionMethods.selectproductUnderCategory(ProductRegistartionMethods.java:1405)
+  zagg.prodRegistration.ProductRegistartionTests.registerMultiReplacementPartsProducts(ProductRegistartionTests.java:699)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+  org.testng.TestRunner.privateRun(TestRunner.java:648)
+  org.testng.TestRunner.run(TestRunner.java:505)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+  org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+  java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+  java.lang.Thread.run(Thread.java:748)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="verifyAllFields" time="11.851" classname="zagg.prodRegistration.ProductRegistartionTests">
+                <failure type="org.openqa.selenium.NoSuchElementException"
+                  message="Unable to locate element: h1.page-title &gt; span
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;Tulasi-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:4f9:1570:e33f:81a%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.4&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/rust_mozprofile.otSC8Tc3efVA, rotatable=false, moz:geckodriverVersion=0.23.0, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=66.0.5, moz:shutdownTimeout=60000.0, platformVersion=18.5.0, moz:processID=47952.0, browserName=firefox, javascriptEnabled=true, platformName=mac, setWindowRect=true, moz:webdriverClick=true}]
+Session ID: 229d19da-04eb-f24e-a68f-52a36a03b773
+*** Element info: {Using=css selector, value=h1.page-title &gt; span}"
+              >
+<![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: h1.page-title > span
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'Tulasi-MacBook-Pro.local', ip: 'fe80:0:0:0:4f9:1570:e33f:81a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.4', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/rust_mozprofile.otSC8Tc3efVA, rotatable=false, moz:geckodriverVersion=0.23.0, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, moz:headless=false, platform=ANY, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=66.0.5, moz:shutdownTimeout=60000.0, platformVersion=18.5.0, moz:processID=47952.0, browserName=firefox, javascriptEnabled=true, platformName=mac, setWindowRect=true, moz:webdriverClick=true}]
+Session ID: 229d19da-04eb-f24e-a68f-52a36a03b773
+*** Element info: {Using=css selector, value=h1.page-title > span}
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:501)
+  org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+  com.lib.TestBase.validateTitle(TestBase.java:95)
+  zagg.prodRegistration.ProductRegistartionTests.verifyAllFields(ProductRegistartionTests.java:24)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+  org.testng.TestRunner.privateRun(TestRunner.java:648)
+  org.testng.TestRunner.run(TestRunner.java:505)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+  org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+  java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+  java.lang.Thread.run(Thread.java:748)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="registerMultiScreenProtectionProduct" time="43.592" classname="zagg.prodRegistration.ProductRegistartionTests">
+                <failure type="java.lang.AssertionError"
+                  message="expected [You have successfully registered your product!] but found [null]"
+              >
+<![CDATA[java.lang.AssertionError: expected [You have successfully registered your product!] but found [null]
+  org.testng.Assert.fail(Assert.java:96)
+  org.testng.Assert.failNotEquals(Assert.java:776)
+  org.testng.Assert.assertEqualsImpl(Assert.java:132)
+  org.testng.Assert.assertEquals(Assert.java:118)
+  org.testng.Assert.assertEquals(Assert.java:453)
+  org.testng.Assert.assertEquals(Assert.java:463)
+  zagg.prodRegistration.ProductRegistartionMethods.isRegisteredConfirmed(ProductRegistartionMethods.java:1126)
+  zagg.prodRegistration.ProductRegistartionTests.registerMultiScreenProtectionProduct(ProductRegistartionTests.java:728)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+  org.testng.TestRunner.privateRun(TestRunner.java:648)
+  org.testng.TestRunner.run(TestRunner.java:505)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+  org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+  java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+  java.lang.Thread.run(Thread.java:748)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="registerMultiCable$AdaptersProducts" time="29.305" classname="zagg.prodRegistration.ProductRegistartionTests">
+                <failure type="java.lang.AssertionError"
+                  message="Cables, Adapters &amp; Accessories- category is not present expected [true] but found [false]"
+              >
+<![CDATA[java.lang.AssertionError: Cables, Adapters & Accessories- category is not present expected [true] but found [false]
+  org.testng.Assert.fail(Assert.java:96)
+  org.testng.Assert.failNotEquals(Assert.java:776)
+  org.testng.Assert.assertTrue(Assert.java:44)
+  zagg.prodRegistration.ProductRegistartionMethods.selectCatgeory(ProductRegistartionMethods.java:541)
+  zagg.prodRegistration.ProductRegistartionTests.registerMultiCable$AdaptersProducts(ProductRegistartionTests.java:572)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+  org.testng.TestRunner.privateRun(TestRunner.java:648)
+  org.testng.TestRunner.run(TestRunner.java:505)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+  org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+  org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+  org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+  java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+  java.lang.Thread.run(Thread.java:748)
+]]>
+      </failure>
+
+          </testcase>
+  
+  
+            <testcase name="addressMandatoryFields" time="13.405" classname="zagg.prodRegistration.ProductRegistartionTests" />
+                <testcase name="calender_FutureDateValidation" time="9.634" classname="zagg.prodRegistration.ProductRegistartionTests" />
+                <testcase name="serialNumberValidationInSections" time="6.764" classname="zagg.prodRegistration.ProductRegistartionTests" />
+                <testcase name="validateSerialNumberWithAnotherUser" time="103.811" classname="zagg.prodRegistration.ProductRegistartionTests" />
+                <testcase name="registerMultiKeyboardsProducts" time="101.650" classname="zagg.prodRegistration.ProductRegistartionTests" />
+                <testcase name="deleteExistingAddress" time="20.562" classname="zagg.prodRegistration.ProductRegistartionTests" />
+      
+</testsuite>

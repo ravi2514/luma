@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Zagg Auccount Management"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="10.349">
+  <properties />
+  
+  
+            <testcase name="loginWithValidCredentials" time="10.349" classname="zagg.accountRegistration.tests.LoginTests" />
+      
+</testsuite>

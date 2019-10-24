@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="zagg.prodRegistration.ProductRegistartionTests">
+        <methods>
+          <include name="registerMultiSpeakersProducts"/>
+          <include name="registerMultiCable$AdaptersProducts"/>
+          <include name="registerMultiProtablePowerProducts"/>
+          <include name="validateAudioAndSpeakersAccordions"/>
+          <include name="regCables$AdaptersProduct"/>
+          <include name="category_batteryCases_RegisterProduct"/>
+          <include name="category_ScreenProtect_VerifyDeviceType"/>
+          <include name="regSpeakersProduct"/>
+          <include name="registerMultiReplacementPartsProducts"/>
+          <include name="storeDeviceTypeAttributeOptionsFromAdmin"/>
+          <include name="registerMultiBatteryCasesProducts"/>
+          <include name="validateCabesAndPortablePowerAccordions"/>
+          <include name="validateReplacementPartsAndOthersAccordions"/>
+          <include name="regKeyboardsProduct"/>
+          <include name="registerMultiScreenProtectionProduct"/>
+          <include name="registerBatteryCasesProductForWR"/>
+          <include name="registerAudioProduct"/>
+          <include name="storeScreenProtection$BatterCasesProducts"/>
+          <include name="openBrowser"/>
+          <include name="validateWirelessDocksAccordions"/>
+          <include name="calender_FutureDateValidation"/>
+          <include name="registerAutomaticallyBatteryCasesProduct"/>
+          <include name="registerMultiCasesProducts"/>
+          <include name="validateScreenProctectionAccordions"/>
+          <include name="verifyAllFields"/>
+          <include name="validateKeyboardAccordions"/>
+          <include name="deleteExistingAddress"/>
+          <include name="regPortablePowerProduct"/>
+          <include name="registerMultiKeyboardsProducts"/>
+          <include name="validateSerialNumberWithAnotherUser"/>
+          <include name="backToOptionsFromReveiw"/>
+          <include name="regScreenProtectionProduct"/>
+          <include name="storeBrand$DevicesAllAttributeOptionsFromAdmin"/>
+          <include name="validateBatteryAndCasesAccordions"/>
+          <include name="registerProdThruSerialNumber"/>
+          <include name="validateBrand$Device$ProductAttributeForScreenProtection"/>
+          <include name="registerMultiHeadphonesProducts"/>
+          <include name="addressMandatoryFields"/>
+          <include name="compareOneBrandToAnother"/>
+          <include name="registerMultiWirelessDocksProducts"/>
+          <include name="serialNumberValidationInSections"/>
+        </methods>
+      </class> <!-- zagg.prodRegistration.ProductRegistartionTests -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

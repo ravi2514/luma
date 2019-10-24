@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Suite" parallel="tests">
+  <test name="FirstTest">
+  <parameter name="browser" value="firefox"/>
+  <parameter name="version" value="60"/>
+  <parameter name="platform" value="MAC"/>
+  <parameter name="appUrl" value="https://staging.zagg.com/" />
+    <classes>
+    <class name="com.lib.BrowserStack" />
+     <class name="zagg.accountRegistration.LoginTests" >
+			<methods>				
+					<include name = "loginWithValidCredentials"/>											
+			</methods>
+	 </class>
+	 <class name="zagg.shop.shoppingTests"/>
+			
+			<class name="com.lib.QuitExecution" />
+    </classes>
+  </test>
+   <!-- Test2 -->
+<!--   <test name="SecondTest">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="version" value="60.0"/>
+  <parameter name="platform" value="WINDOWS"/>
+  <parameter name="appUrl" value="https://staging.zagg.com/" />
+    <classes>
+    	<class name="com.lib.BrowserStack" />
+      			<class name="zagg.shop.Shop_placeOrderWithAmazonPay"/>
+		    
+			<class name="com.lib.QuitExecution" />
+    </classes>
+  </test>  -->
+</suite> <!-- Suite -->

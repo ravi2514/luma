@@ -1,0 +1,1973 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/40</td>
+</tr><tr>
+<td>Started on:</td><td>Thu May 23 18:38:43 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (75 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='zagg.prodRegistration.ProductRegistartionTests.openBrowser()'><b>openBrowser</b><br>Test class: zagg.prodRegistration.ProductRegistartionTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2145970759", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2145970759'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>zagg.prodRegistration.ProductRegistartionTests@1dd02175</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='zagg.prodRegistration.ProductRegistartionTests.addressMandatoryFields()'><b>addressMandatoryFields</b><br>Test class: zagg.prodRegistration.ProductRegistartionTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace444920847", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace444920847'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>zagg.prodRegistration.ProductRegistartionTests@1dd02175</td></tr>
+<tr>
+<td title='zagg.prodRegistration.ProductRegistartionTests.backToOptionsFromReveiw()'><b>backToOptionsFromReveiw</b><br>Test class: zagg.prodRegistration.ProductRegistartionTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1524126153", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1524126153'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>zagg.prodRegistration.ProductRegistartionTests@1dd02175</td></tr>
+<tr>
+<td title='zagg.prodRegistration.ProductRegistartionTests.calender_FutureDateValidation()'><b>calender_FutureDateValidation</b><br>Test class: zagg.prodRegistration.ProductRegistartionTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1259769769", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1259769769'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>zagg.prodRegistration.ProductRegistartionTests@1dd02175</td></tr>
+<tr>
+<td title='zagg.prodRegistration.ProductRegistartionTests.category_ScreenProtect_VerifyDeviceType()'><b>category_ScreenProtect_VerifyDeviceType</b><br>Test class: zagg.prodRegistration.ProductRegistartionTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace339099861", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace339099861'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>zagg.prodRegistration.ProductRegistartionTests@1dd02175</td></tr>
+<tr>
+<td title='zagg.prodRegistration.ProductRegistartionTests.category_batteryCases_RegisterProduct()'><b>category_batteryCases_RegisterProduct</b><br>Test class: zagg.prodRegistration.ProductRegistartionTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1197365356", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1197365356'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>zagg.prodRegistration.ProductRegistartionTests@1dd02175</td></tr>
+<tr>
+<td title='zagg.prodRegistration.ProductRegistartionTests.compareOneBrandToAnother()'><b>compareOneBrandToAnother</b><br>Test class: zagg.prodRegistration.ProductRegistartionTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace102065302", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace102065302'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>zagg.prodRegistration.ProductRegistartionTests@1dd02175</td></tr>
+<tr>
+<td title='zagg.prodRegistration.ProductRegistartionTests.deleteExistingAddress()'><b>deleteExistingAddress</b><br>Test class: zagg.prodRegistration.ProductRegistartionTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace112466394", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace112466394'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>zagg.prodRegistration.ProductRegistartionTests@1dd02175</td></tr>
+<tr>
+<td title='zagg.prodRegistration.ProductRegistartionTests.regCables$AdaptersProduct()'><b>regCables$AdaptersProduct</b><br>Test class: zagg.prodRegistration.ProductRegistartionTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace973576304", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace973576304'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>zagg.prodRegistration.ProductRegistartionTests@1dd02175</td></tr>
+<tr>
+<td title='zagg.prodRegistration.ProductRegistartionTests.regKeyboardsProduct()'><b>regKeyboardsProduct</b><br>Test class: zagg.prodRegistration.ProductRegistartionTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace715521683", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace715521683'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>zagg.prodRegistration.ProductRegistartionTests@1dd02175</td></tr>
+<tr>
+<td title='zagg.prodRegistration.ProductRegistartionTests.regPortablePowerProduct()'><b>regPortablePowerProduct</b><br>Test class: zagg.prodRegistration.ProductRegistartionTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1545242146", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1545242146'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>zagg.prodRegistration.ProductRegistartionTests@1dd02175</td></tr>
+<tr>
+<td title='zagg.prodRegistration.ProductRegistartionTests.regScreenProtectionProduct()'><b>regScreenProtectionProduct</b><br>Test class: zagg.prodRegistration.ProductRegistartionTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace254749889", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace254749889'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>zagg.prodRegistration.ProductRegistartionTests@1dd02175</td></tr>
+<tr>
+<td title='zagg.prodRegistration.ProductRegistartionTests.regSpeakersProduct()'><b>regSpeakersProduct</b><br>Test class: zagg.prodRegistration.ProductRegistartionTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace992802731", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace992802731'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>zagg.prodRegistration.ProductRegistartionTests@1dd02175</td></tr>
+<tr>
+<td title='zagg.prodRegistration.ProductRegistartionTests.registerAudioProduct()'><b>registerAudioProduct</b><br>Test class: zagg.prodRegistration.ProductRegistartionTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1131040331", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1131040331'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>zagg.prodRegistration.ProductRegistartionTests@1dd02175</td></tr>
+<tr>
+<td title='zagg.prodRegistration.ProductRegistartionTests.registerAutomaticallyBatteryCasesProduct()'><b>registerAutomaticallyBatteryCasesProduct</b><br>Test class: zagg.prodRegistration.ProductRegistartionTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1702660825", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1702660825'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>zagg.prodRegistration.ProductRegistartionTests@1dd02175</td></tr>
+<tr>
+<td title='zagg.prodRegistration.ProductRegistartionTests.registerBatteryCasesProductForWR()'><b>registerBatteryCasesProductForWR</b><br>Test class: zagg.prodRegistration.ProductRegistartionTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace63001505", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace63001505'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>zagg.prodRegistration.ProductRegistartionTests@1dd02175</td></tr>
+<tr>
+<td title='zagg.prodRegistration.ProductRegistartionTests.registerMultiBatteryCasesProducts()'><b>registerMultiBatteryCasesProducts</b><br>Test class: zagg.prodRegistration.ProductRegistartionTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace191037037", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace191037037'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>zagg.prodRegistration.ProductRegistartionTests@1dd02175</td></tr>
+<tr>
+<td title='zagg.prodRegistration.ProductRegistartionTests.registerMultiCable$AdaptersProducts()'><b>registerMultiCable$AdaptersProducts</b><br>Test class: zagg.prodRegistration.ProductRegistartionTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace330084561", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace330084561'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>zagg.prodRegistration.ProductRegistartionTests@1dd02175</td></tr>
+<tr>
+<td title='zagg.prodRegistration.ProductRegistartionTests.registerMultiCasesProducts()'><b>registerMultiCasesProducts</b><br>Test class: zagg.prodRegistration.ProductRegistartionTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1043351526", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1043351526'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>zagg.prodRegistration.ProductRegistartionTests@1dd02175</td></tr>
+<tr>
+<td title='zagg.prodRegistration.ProductRegistartionTests.registerMultiHeadphonesProducts()'><b>registerMultiHeadphonesProducts</b><br>Test class: zagg.prodRegistration.ProductRegistartionTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace937773018", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace937773018'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>zagg.prodRegistration.ProductRegistartionTests@1dd02175</td></tr>
+<tr>
+<td title='zagg.prodRegistration.ProductRegistartionTests.registerMultiKeyboardsProducts()'><b>registerMultiKeyboardsProducts</b><br>Test class: zagg.prodRegistration.ProductRegistartionTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace728258269", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace728258269'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>zagg.prodRegistration.ProductRegistartionTests@1dd02175</td></tr>
+<tr>
+<td title='zagg.prodRegistration.ProductRegistartionTests.registerMultiProtablePowerProducts()'><b>registerMultiProtablePowerProducts</b><br>Test class: zagg.prodRegistration.ProductRegistartionTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1790421142", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1790421142'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>zagg.prodRegistration.ProductRegistartionTests@1dd02175</td></tr>
+<tr>
+<td title='zagg.prodRegistration.ProductRegistartionTests.registerMultiReplacementPartsProducts()'><b>registerMultiReplacementPartsProducts</b><br>Test class: zagg.prodRegistration.ProductRegistartionTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1572098393", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1572098393'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>zagg.prodRegistration.ProductRegistartionTests@1dd02175</td></tr>
+<tr>
+<td title='zagg.prodRegistration.ProductRegistartionTests.registerMultiScreenProtectionProduct()'><b>registerMultiScreenProtectionProduct</b><br>Test class: zagg.prodRegistration.ProductRegistartionTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1627857534", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1627857534'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>zagg.prodRegistration.ProductRegistartionTests@1dd02175</td></tr>
+<tr>
+<td title='zagg.prodRegistration.ProductRegistartionTests.registerMultiSpeakersProducts()'><b>registerMultiSpeakersProducts</b><br>Test class: zagg.prodRegistration.ProductRegistartionTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2084663827", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2084663827'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>zagg.prodRegistration.ProductRegistartionTests@1dd02175</td></tr>
+<tr>
+<td title='zagg.prodRegistration.ProductRegistartionTests.registerMultiWirelessDocksProducts()'><b>registerMultiWirelessDocksProducts</b><br>Test class: zagg.prodRegistration.ProductRegistartionTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace360062456", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace360062456'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>zagg.prodRegistration.ProductRegistartionTests@1dd02175</td></tr>
+<tr>
+<td title='zagg.prodRegistration.ProductRegistartionTests.registerProdThruSerialNumber()'><b>registerProdThruSerialNumber</b><br>Test class: zagg.prodRegistration.ProductRegistartionTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace589835301", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace589835301'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>zagg.prodRegistration.ProductRegistartionTests@1dd02175</td></tr>
+<tr>
+<td title='zagg.prodRegistration.ProductRegistartionTests.serialNumberValidationInSections()'><b>serialNumberValidationInSections</b><br>Test class: zagg.prodRegistration.ProductRegistartionTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace315860201", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace315860201'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>zagg.prodRegistration.ProductRegistartionTests@1dd02175</td></tr>
+<tr>
+<td title='zagg.prodRegistration.ProductRegistartionTests.storeBrand$DevicesAllAttributeOptionsFromAdmin()'><b>storeBrand$DevicesAllAttributeOptionsFromAdmin</b><br>Test class: zagg.prodRegistration.ProductRegistartionTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2024918163", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2024918163'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>zagg.prodRegistration.ProductRegistartionTests@1dd02175</td></tr>
+<tr>
+<td title='zagg.prodRegistration.ProductRegistartionTests.storeDeviceTypeAttributeOptionsFromAdmin()'><b>storeDeviceTypeAttributeOptionsFromAdmin</b><br>Test class: zagg.prodRegistration.ProductRegistartionTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace107241811", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace107241811'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>zagg.prodRegistration.ProductRegistartionTests@1dd02175</td></tr>
+<tr>
+<td title='zagg.prodRegistration.ProductRegistartionTests.storeScreenProtection$BatterCasesProducts()'><b>storeScreenProtection$BatterCasesProducts</b><br>Test class: zagg.prodRegistration.ProductRegistartionTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace558922244", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace558922244'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>zagg.prodRegistration.ProductRegistartionTests@1dd02175</td></tr>
+<tr>
+<td title='zagg.prodRegistration.ProductRegistartionTests.validateAudioAndSpeakersAccordions()'><b>validateAudioAndSpeakersAccordions</b><br>Test class: zagg.prodRegistration.ProductRegistartionTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace64133603", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace64133603'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>zagg.prodRegistration.ProductRegistartionTests@1dd02175</td></tr>
+<tr>
+<td title='zagg.prodRegistration.ProductRegistartionTests.validateBatteryAndCasesAccordions()'><b>validateBatteryAndCasesAccordions</b><br>Test class: zagg.prodRegistration.ProductRegistartionTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1493625803", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1493625803'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>zagg.prodRegistration.ProductRegistartionTests@1dd02175</td></tr>
+<tr>
+<td title='zagg.prodRegistration.ProductRegistartionTests.validateBrand$Device$ProductAttributeForScreenProtection()'><b>validateBrand$Device$ProductAttributeForScreenProtection</b><br>Test class: zagg.prodRegistration.ProductRegistartionTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1653986196", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1653986196'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>zagg.prodRegistration.ProductRegistartionTests@1dd02175</td></tr>
+<tr>
+<td title='zagg.prodRegistration.ProductRegistartionTests.validateCabesAndPortablePowerAccordions()'><b>validateCabesAndPortablePowerAccordions</b><br>Test class: zagg.prodRegistration.ProductRegistartionTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1436901839", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1436901839'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>zagg.prodRegistration.ProductRegistartionTests@1dd02175</td></tr>
+<tr>
+<td title='zagg.prodRegistration.ProductRegistartionTests.validateKeyboardAccordions()'><b>validateKeyboardAccordions</b><br>Test class: zagg.prodRegistration.ProductRegistartionTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace630074945", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace630074945'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>zagg.prodRegistration.ProductRegistartionTests@1dd02175</td></tr>
+<tr>
+<td title='zagg.prodRegistration.ProductRegistartionTests.validateReplacementPartsAndOthersAccordions()'><b>validateReplacementPartsAndOthersAccordions</b><br>Test class: zagg.prodRegistration.ProductRegistartionTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1866161430", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1866161430'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>zagg.prodRegistration.ProductRegistartionTests@1dd02175</td></tr>
+<tr>
+<td title='zagg.prodRegistration.ProductRegistartionTests.validateScreenProctectionAccordions()'><b>validateScreenProctectionAccordions</b><br>Test class: zagg.prodRegistration.ProductRegistartionTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace992846223", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace992846223'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>zagg.prodRegistration.ProductRegistartionTests@1dd02175</td></tr>
+<tr>
+<td title='zagg.prodRegistration.ProductRegistartionTests.validateSerialNumberWithAnotherUser()'><b>validateSerialNumberWithAnotherUser</b><br>Test class: zagg.prodRegistration.ProductRegistartionTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2032188048", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2032188048'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>zagg.prodRegistration.ProductRegistartionTests@1dd02175</td></tr>
+<tr>
+<td title='zagg.prodRegistration.ProductRegistartionTests.validateWirelessDocksAccordions()'><b>validateWirelessDocksAccordions</b><br>Test class: zagg.prodRegistration.ProductRegistartionTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace999522307", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace999522307'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>zagg.prodRegistration.ProductRegistartionTests@1dd02175</td></tr>
+<tr>
+<td title='zagg.prodRegistration.ProductRegistartionTests.verifyAllFields()'><b>verifyAllFields</b><br>Test class: zagg.prodRegistration.ProductRegistartionTests</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace351028485", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace351028485'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeSuite on method openBrowser but has not been marked @Optional or defined
+in /private/var/folders/my/j91kgyw53sb6x96z20dmpxth0000gn/T/testng-eclipse-1382730/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:290)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>zagg.prodRegistration.ProductRegistartionTests@1dd02175</td></tr>
+</table><p>
+</body>
+</html>
