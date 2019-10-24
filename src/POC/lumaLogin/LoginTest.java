@@ -15,4 +15,22 @@ public class LoginTest extends LoginMethods{
 		
 	}
 	
+	
+	@Test(priority=102)
+	public void verifyTitle() throws Exception {
+		titleValidate();	
+		
+	}
+	
+	
+	
+	
+	
+	
+	@Test(priority=103)
+	public void quit() throws Exception {
+		 driver.quit();		
+		
+	}
+	
 }
