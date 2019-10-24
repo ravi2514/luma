@@ -12,7 +12,7 @@
 			
 	
 			
-			<class name="com.lib.QuitExecution" />
+			<!-- <class name="com.lib.QuitExecution" /> -->
     </classes>
   </test>
    <!-- Test2 -->
