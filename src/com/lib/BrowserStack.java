@@ -29,9 +29,9 @@ public class BrowserStack extends ExtentReportNG{
 	    capability.setCapability("browserstack.networkLogs", "true");
 	    
 
-	    capability.setCapability("project", "ZAGG");
-	    capability.setCapability("name", "Zagg-Automation in "+platform);	    	
-	    capability.setCapability("build", "9.26.4");
+	    capability.setCapability("project", "POC");
+	    capability.setCapability("name", "LUMA in "+platform);	    	
+	    capability.setCapability("build", "10.25.1");
 	    driver = new RemoteWebDriver(
 	      new URL("https://"+userName+":"+accessKey+"@hub-cloud.browserstack.com/wd/hub"),capability);	      
 	      driver.get(appUrl);
