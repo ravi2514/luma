@@ -134,7 +134,7 @@
 				</goals>
 				<inherited>true</inherited>
 				<configuration>					
-					<from>zagg.automation@gmail.com</from>					
+					<from>zagg.automationtest@gmail.com</from>					
 					<subject>Zagg Automation Report</subject>					
 					<!-- Fail the build if the mail doesnt reach -->
 					<failonerror>true</failonerror>						
