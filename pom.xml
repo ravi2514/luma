@@ -142,7 +142,7 @@
 					<mailport>465</mailport>
 					<mailssl>true</mailssl>
 					<mailAltConfig>true</mailAltConfig>						
-					<mailuser>zagg.automation@gmail.com</mailuser>
+					<mailuser>zagg.automationtest@gmail.com</mailuser>
 					<mailpassword>zagg@123</mailpassword>	
 					<receivers>
 						<!-- To Email address -->

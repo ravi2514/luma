@@ -33,6 +33,8 @@ public class LoginMethods extends TestBase{
        String text = getText("cssSelector", "div.column > h1:nth-child(3)");
        System.out.println(text  +"  text");
        Assert.assertEquals(text, "Hello World");
+       
+       driver.quit();
         
 	}
 	

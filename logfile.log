@@ -1,2 +1,6 @@
 2019-10-24 12:59:51,925 INFO  [Logger] Enter into homePage method 
 2019-10-24 12:59:53,821 INFO  [Logger] Enter into loginWithValidCredentials method 
+2019-10-24 13:07:57,323 INFO  [Logger] Enter into homePage method 
+2019-10-24 13:07:59,332 INFO  [Logger] Enter into loginWithValidCredentials method 
+2019-10-24 13:10:25,596 INFO  [Logger] Enter into homePage method 
+2019-10-24 13:10:27,507 INFO  [Logger] Enter into loginWithValidCredentials method 
