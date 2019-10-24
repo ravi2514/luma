@@ -88,29 +88,6 @@ protected static final Log logger = LogFactory.getLog(TestBase.class);
 		     return date;
 		}
 	
-	
-	/**validates the page title 
-	 * @throws Exception **/
-	public void validateHomeTitle(String expTitle) throws Exception {
-		waitOnSpinner();
-		wdWait("cssSelector", newAccTitle);
-		String actTitle = driver.findElement(org.openqa.selenium.By.cssSelector(newAccTitle)).getText();
-		System.out.println(actTitle);
-		Assert.assertEquals(actTitle, expTitle);
-		wdWait("cssSelector", allowCookies);
-		clickOnObject("cssSelector", allowCookies);
-		waitOnSpinner();
-	}
-	
-	
-	/**validates the page title 
-	 * @throws Exception **/
-	public void validatePRTitle(String expTitle) throws Exception {
-		wdWait("cssSelector", PRTitle);
-		String actTitle = driver.findElement(org.openqa.selenium.By.cssSelector(PRTitle)).getText();
-		Assert.assertEquals(actTitle, expTitle);
-	}
-	
 		
 		
 		// This method is used to Wait for a element to present.		
@@ -1136,15 +1113,7 @@ protected static final Log logger = LogFactory.getLog(TestBase.class);
 			 logInfo("Entered into waitOnSpinner() method");
 				wdWait("xpath", "//*[@id='spinner-container'][@display='none']");
 		 }
-		
-		public void waitOnSpinnerInPR() throws Exception {
-			 logInfo("Entered into waitOnSpinnerInPR() method");
-//			 WebElement spin = driver.findElement(ByXPath.xpath(custLoderSpinner));
-//			 spin.getText();
-			 wdWait("xpath", custLoderSpinner);
-			 //System.out.println("spnnewerm "+ spin.getText());
-				
-		 }
+	
 		
 		
 		public void storeDataInProrpertyFile(String sheetName, String testCaseId) throws IOException, ConfigurationException{
@@ -1198,143 +1167,7 @@ protected static final Log logger = LogFactory.getLog(TestBase.class);
 		
 		
 		
-		public void logoutAsCustomer() throws Exception {
-			logInfo("Enter into logoutAsCustomer() method");
-			wdWait("cssSelector", logoutLnk);
-			scrollDown("cssSelector", logoutLnk);
-			List<WebElement> link = driver.findElements(ByCssSelector.cssSelector(logoutLnk));
-			for (WebElement links :link) {	
-				String linksName = links.getText().trim();
-				if(linksName.equalsIgnoreCase("Log Out")) {
-					links.click();
-					break;
-					}
-				}
-				
-		}
-		
-		
-		public void myAccount() throws Exception {
-			logInfo("Enter into logoutAsCustomer() method");
-			wdWait("cssSelector", logoutLnk);
-			scrollDown("cssSelector", logoutLnk);
-			List<WebElement> link = driver.findElements(ByCssSelector.cssSelector(logoutLnk));
-			for (WebElement links :link) {	
-				String linksName = links.getText().trim();
-				if(linksName.equalsIgnoreCase("My Account")) {
-					links.click();
-					break;
-					}
-				}
-			
-		
-		}
-		
-		/** Navigates to home page*/
-		public void homePageByCountry(String country) throws Exception {
-	        logInfo("Enter into homePage method");
-	        driver.navigate().to(appUrl+"en_"+country);
-	        
-	        
-		}
-		
-		
-		/** Navigates to home page*/
-		public void homePage() throws Exception {
-	        logInfo("Enter into homePage method");
-	        driver.navigate().to(appUrl);
-	        
-		}
-		
-		/** Navigates to Product Registration Screen*/
-		public void nav2AccountDashboard(String country) throws Exception {
-	        logInfo("Enter into nav2AccountDashboard() method");
-	        driver.navigate().to(appUrl+"en_"+country+"/customer/account/");       
-	        
-	        
-		}
-		
-		
-		/***Select the Sidebar navigations tab 
-		 * @throws Exception **/
-		public void selectSideBarItems(String tabName) throws Exception {
-			logInfo("Entered into selectSideBarItems() method");
-			boolean isTabPresent= false;
-			implicityWaits(05);
-			wdWait("cssSelector", sideList);
-			List <WebElement> lis = driver.findElements(ByCssSelector.cssSelector(sideList));
-			for(WebElement allTabs:lis) {
-				String tab= allTabs.getText().trim();				
-				if(tab.equalsIgnoreCase(tabName)) {
-					isTabPresent=true;
-					allTabs.click();
-					waitOnSpinner();
-					break;
-				}			
-			}if(isTabPresent==false) {
-				Assert.assertTrue(isTabPresent, tabName+ " - is not present");
-			}
-			
-		}
-		
-		
-		/***selects amazon pay button and enter all the required detail
-		 * @throws Exception **/
-		
-		public void handleAmazonPayment() throws Exception {
-			logInfo("Enter into handleAmazonPayment() method");	
-			Actions act = new Actions (driver);
-			waitOnSpinner();
-			scrollDown("cssSelector", ccRadio);
-			wdWait("cssSelector", ccRadio);
-			clickOnObject("cssSelector", total);
-			
-			WebElement ccRad= driver.findElement(org.openqa.selenium.By.cssSelector(ccRadio));
-			act.moveToElement(ccRad).doubleClick().build().perform();
-			wdWait("cssSelector", amazonRadio);	
-			scrollDown("cssSelector", amazonRadio);
-			WebElement amzRad= driver.findElement(org.openqa.selenium.By.cssSelector(amazonRadio));
-			act.moveToElement(amzRad).doubleClick().build().perform();
-			WebElement amzIcon= driver.findElement(org.openqa.selenium.By.cssSelector(amzonPayIcon));
-			act.moveToElement(amzIcon).doubleClick().build().perform();
-			waitOnSpinner();
-			handleAmzonWindow();
-			waitOnSpinner();
-		
-		}
-		
-		
-		public void handleAmzonWindow() throws Exception{
-			logInfo("Enter into handleAmzonWindow() method");	
-			String wndBeforeWindow = driver.getWindowHandle();	
-			for(String w : driver.getWindowHandles()){
-				if(!w.equalsIgnoreCase(wndBeforeWindow)){
-					driver.switchTo().window(w);
-					clickOnObject("cssSelector", amzonEmail);
-					enterText("cssSelector", amzonEmail,amzonUser);
-					enterText("cssSelector", amzonPassword,amzonPwd);
-					submitObject("cssSelector", amzonPassword);
-					driver.switchTo().window(wndBeforeWindow);
-					System.out.println(driver.getCurrentUrl());
-					
-				}
-			}
-		
-		}
-		
-		
-		/******   Tries to close Offer popup window
-		 * @throws Exception ****/
-		
-		public void handleOfferPopUp() throws Exception {
-			wdWait("xpath", offerSubject);
-			List<WebElement> sub = driver.findElements(ByXPath.xpath(offerSubject));
-			int size= sub.size();
-			if(!(size==0)) {				
-				clickOnObject("xpath", offerPop);
-			}
-			
-		}
+	
 		
 		
 		 public static boolean waitTillSpinnerDisable(WebDriver driver, By by)
