@@ -5,15 +5,12 @@
   <parameter name="browser" value="firefox"/>
   <parameter name="version" value="60"/>
   <parameter name="platform" value="MAC"/>
-  <parameter name="appUrl" value="https://staging.zagg.com/" />
+  <parameter name="appUrl" value="http://ec2-18-223-118-61.us-east-2.compute.amazonaws.com/magento4/magento2/" />
     <classes>
     <class name="com.lib.BrowserStack" />
-     <class name="zagg.accountRegistration.LoginTests" >
-			<methods>				
-					<include name = "loginWithValidCredentials"/>											
-			</methods>
-	 </class>
-	 <class name="zagg.shop.shoppingTests"/>
+     <class name="POC.lumaLogin.LoginTest" />
+			
+	
 			
 			<class name="com.lib.QuitExecution" />
     </classes>
