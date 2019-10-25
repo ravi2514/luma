@@ -31,7 +31,7 @@ public class BrowserStack extends ExtentReportNG{
 
 	    capability.setCapability("project", "POC");
 	    capability.setCapability("name", "LUMA in "+platform);	    	
-	    capability.setCapability("build", "10.25.1");
+	    capability.setCapability("build", "10.25.3");
 	    driver = new RemoteWebDriver(
 	      new URL("https://"+userName+":"+accessKey+"@hub-cloud.browserstack.com/wd/hub"),capability);	      
 	      driver.get(appUrl);

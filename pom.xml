@@ -146,7 +146,9 @@
 					<mailpassword>zagg@123</mailpassword>	
 					<receivers>
 						<!-- To Email address -->
-						<receiver>ravi.tulasi@xelits.com</receiver>						
+						<receiver>ravi.tulasi@xelits.com</receiver>	
+						<receiver>javid.abdul@zagg.com</receiver>	
+						<receiver>urvesh.singh@xelits.com</receiver>						
 																
 					</receivers>					
 					<fileSets>

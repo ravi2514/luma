@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
   <test thread-count="3" name="FirstTest(failed)" parallel="tests">
     <parameter name="browser" value="firefox"/>
-    <parameter name="appUrl" value="https://staging.zagg.com/"/>
+    <parameter name="appUrl" value="http://ec2-18-223-118-61.us-east-2.compute.amazonaws.com/magento4/magento2/"/>
     <parameter name="version" value="60"/>
     <parameter name="platform" value="MAC"/>
     <classes>
-      <class name="zagg.shop.shoppingTests">
+      <class name="POC.lumaLogin.LoginTest">
         <methods>
-          <include name="shop_placeOrderWithAmazonPay"/>
-          <include name="shop_placeOrderWithoutUser"/>
-          <include name="shop_placeOrderProduct"/>
+          <include name="verifyTitle"/>
           <include name="browserSetup"/>
         </methods>
-      </class> <!-- zagg.shop.shoppingTests -->
+      </class> <!-- POC.lumaLogin.LoginTest -->
     </classes>
   </test> <!-- FirstTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

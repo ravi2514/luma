@@ -23,7 +23,7 @@ public class LoginMethods extends TestBase{
 	
 	
 	public void loginWithValidCredentials() throws Exception {
-        logInfo("Enter into loginWithValidCredentials method");
+        logInfo("Enter into loginWithValidCredentials() method");
         clickOnObject("cssSelector", siginLnk);            
         clearText("cssSelector", email);
         clearText("cssSelector", password); 
@@ -34,7 +34,17 @@ public class LoginMethods extends TestBase{
        System.out.println(text  +"  text");
        Assert.assertEquals(text, "Hello World");
        
-       driver.quit();
+      
+        
+	}
+	
+	public void titleValidate() throws Exception {
+        logInfo("Enter into titleValidate() method");        
+       String text = getText("cssSelector", "button.subscribe > span:nth-child(1)");
+       System.out.println(text  +"  text");
+       Assert.assertEquals(text, "Subscribe Button");
+       
+      
         
 	}
 	
