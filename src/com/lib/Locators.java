@@ -16,7 +16,7 @@ public class Locators {
 				public  String gecko_driver = projectPath + "/browserDrivers/geckodriver_mac";
 				public String excelFilePath = projectPath + "/attributeData/productDetails.xls";
 
-				public  String appUrl = "http://ec2-18-223-118-61.us-east-2.compute.amazonaws.com/magento4/magento2/";                //"https://mcprod.zagg.com/";  //"https://staging.zagg.com/";   //"http://www.zagg.local/";	
+				public  String appUrl = "http://ec2-13-59-30-44.us-east-2.compute.amazonaws.com/magento4/magento2/";                //"https://mcprod.zagg.com/";  //"https://staging.zagg.com/";   //"http://www.zagg.local/";	
 				
 				
 				

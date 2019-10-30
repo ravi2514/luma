@@ -5,7 +5,7 @@
   <parameter name="browser" value="firefox"/>
   <parameter name="version" value="60"/>
   <parameter name="platform" value="MAC"/>
-  <parameter name="appUrl" value="http://ec2-18-223-118-61.us-east-2.compute.amazonaws.com/magento4/magento2/" />
+  <parameter name="appUrl" value="http://ec2-13-59-30-44.us-east-2.compute.amazonaws.com/magento4/magento2/" />
     <classes>
     <class name="com.lib.BrowserStack" />
      <class name="POC.lumaLogin.LoginTest" />
@@ -16,16 +16,14 @@
     </classes>
   </test>
    <!-- Test2 -->
-<!--   <test name="SecondTest">
+  <test name="SecondTest">
   <parameter name="browser" value="chrome"/>
   <parameter name="version" value="60.0"/>
   <parameter name="platform" value="WINDOWS"/>
-  <parameter name="appUrl" value="https://staging.zagg.com/" />
+  <parameter name="appUrl" value="http://ec2-13-59-30-44.us-east-2.compute.amazonaws.com/magento4/magento2/" />
     <classes>
     	<class name="com.lib.BrowserStack" />
-      			<class name="zagg.shop.Shop_placeOrderWithAmazonPay"/>
-		    
-			<class name="com.lib.QuitExecution" />
+     <class name="POC.lumaLogin.LoginTest" />
     </classes>
-  </test>  -->
+  </test> 
 </suite> <!-- Suite -->
